@@ -1,0 +1,142 @@
+/* pages/index/index.wxss */
+
+.viewContainer {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 轮播图 */
+
+.swiperBox {
+    height: 300rpx;
+}
+
+.swiperBox .swiperItem image {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 五个图标导航 */
+
+.iconNav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40rpx;
+}
+
+.iconNavItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 26rpx;
+}
+
+.iconfont {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 10rpx 0;
+    border-radius: 50%;
+    background-color: rgb(240, 19, 19);
+    text-align: center;
+    line-height: 100rpx;
+}
+
+
+/* 为你推荐 */
+
+.recommend {
+    margin: 10rpx 20rpx;
+}
+
+.recommend .recommendBody {
+    display: flex;
+    height: 370rpx;
+}
+
+.recommend .recommendItem {
+    width: 200rpx;
+    margin-top: 10rpx;
+    margin-right: 20rpx;
+}
+
+.recommend .recommendImg {
+    width: 200rpx;
+    height: 200rpx;
+}
+
+.recommend .recommendImg image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15rpx;
+}
+
+.recommend .recommendItem text {
+    /* 单行文本溢出隐藏 省略号代替 */
+    /* display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+    /* 多行文本溢出隐藏 省略号代替 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* 设置对齐模式 */
+    -webkit-line-clamp: 2;
+    /* 2行 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24rpx;
+}
+
+
+/* 排行榜 */
+
+.topListContainer {
+    margin: 0 20rpx;
+}
+
+.topListContainer swiper {
+    height: 500rpx;
+}
+
+.topListContainer swiper swiper-item {
+    background-color: #fbfbfb;
+}
+
+.topListContainer .topList {
+    padding-top: 20rpx;
+}
+
+.topListContainer .topList .topListName {
+    margin-bottom: 20rpx;
+}
+
+.topList .topItem {
+    /* 当一个元素设置为flex，其子元素会自动成为block元素 */
+    display: flex;
+    height: 100rpx;
+    margin: 20rpx 0;
+}
+
+.topList .topItem image {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 10rpx;
+}
+
+.topList .topItem .musicCount {
+    width: 100rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+}
+
+.topList .topItem .musicName {
+    width: 400rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
