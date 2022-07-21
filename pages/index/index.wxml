@@ -9,23 +9,33 @@
     <!-- 五个图标导航区域 -->
     <view class="iconNav">
         <view class="iconNavItem">
-            <icon type="search" size="60rpx" color="white" class="iconfont"></icon>
+            <view>
+                <image src="/static/svg/tuijian.svg" class="iconfont"></image>
+            </view>
             <text>每日推荐</text>
         </view>
         <view class="iconNavItem">
-            <icon type="search" size="60rpx" color="white" class="iconfont"></icon>
+            <view>
+                <image src="/static/svg/gedan.svg" class="iconfont"></image>
+            </view>
             <text>歌单</text>
         </view>
         <view class="iconNavItem">
-            <icon type="search" size="60rpx" color="white" class="iconfont"></icon>
+            <view>
+                <image src="/static/svg/paihangbang.svg" class="iconfont"></image>
+            </view>
             <text>排行榜</text>
         </view>
         <view class="iconNavItem">
-            <icon type="search" size="60rpx" color="white" class="iconfont"></icon>
+            <view>
+                <image src="/static/svg/diantai.svg" class="iconfont"></image>
+            </view>
             <text>电台</text>
         </view>
         <view class="iconNavItem">
-            <icon type="search" size="60rpx" color="white" class="iconfont"></icon>
+            <view>
+                <image src="/static/svg/zhibo.svg" class="iconfont"></image>
+            </view>
             <text>直播</text>
         </view>
     </view>
