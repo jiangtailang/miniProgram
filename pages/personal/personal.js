@@ -24,11 +24,11 @@ Page({
         if (userInfo.account) {
             // 更新userInfo的状态
             this.setData({
-                userInfo: JSON.parse(userInfo)
-            })
-            this.getRecentPlayList(userInfo.account.id)
+                    userInfo: JSON.parse(userInfo)
+                })
+                // this.getRecentPlayList(this.data.userInfo.account.id)
         }
-        // this.getRecentPlayList('2075939212')
+        this.getRecentPlayList('2075939212')
     },
     // 跳转到登录页面
     toLogin() {
@@ -38,15 +38,15 @@ Page({
     },
     // 获取最近播放列表
     async getRecentPlayList(uid) {
-        let result = await request('/user/record', { uid, type: 1 })
+        let result = await request('/user/record', { uid, type: 0 })
         if (result.code == 200) {
             let index = 0
-            let weekData = result.weekData.slice(0, 10).map(item => {
+            let allData = result.allData.slice(0, 10).map(item => {
                 item.id = index++
                     return item;
             })
             this.setData({
-                recentPlayList: weekData
+                recentPlayList: allData
             })
         } else {
             console.log(result);

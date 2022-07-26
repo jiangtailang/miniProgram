@@ -1,2 +1,39 @@
-<!--pages/video/video.wxml-->
-<text>pages/video/video.wxml</text>
+<view class="videoContainer">
+    <view class="videoHeader">
+        <image src="/static/images/video/video.jpg"></image>
+        <view class="search">搜索商品</view>
+        <image src="/static/images/logo.png"></image>
+    </view>
+    <view class="navContainer">
+        <scroll-view class="videoNav" enable-flex scroll-x>
+            <view class="navItem {{navId==item.id?'active':''}}" wx:for="{{videoGroupList}}" wx:key="id" id="{{item.id}}" data-id="{{item.id}}" bindtap="tapNavItem">
+                <text>{{item.name}}</text>
+            </view>
+        </scroll-view>
+    </view>
+    <srcoll-view scroll-y class="videoList">
+        <view class="videoItem">
+            <view class="content">
+                <image src="/static/img/huawei.web.jpg" />
+                <view class="copyWriting">bojalar va shohrajfdk</view>
+            </view>
+            <view class="footer">
+                <image class="avatar" src="/static/img/huawei.web.jpg" />
+                <text class="nickname">beyond</text>
+                <view class="comments_praised">
+                    <view class="item">
+                        <image src="/static/svg/aixin.svg" />
+                        <text class="count">9999</text>
+                    </view>
+                    <view class="item">
+                        <image src="/static/svg/pinglun.svg" />
+                        <text class="count">888</text>
+                    </view>
+                    <button open-type="share" class="item btn">
+                        <image src="/static/svg/more.svg" />
+                    </button>
+                </view>
+            </view>
+        </view>
+    </srcoll-view>
+</view>

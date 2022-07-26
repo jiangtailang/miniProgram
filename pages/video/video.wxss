@@ -1,1 +1,129 @@
 /* pages/video/video.wxss */
+
+
+/* 视频页头部搜索 */
+
+.videoContainer .videoHeader {
+    display: flex;
+    padding: 20rpx;
+}
+
+.videoContainer .videoHeader image {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.videoHeader .search {
+    flex: 1;
+    height: 60rpx;
+    border: 1rpx solid #eee;
+    margin: 0 20rpx;
+    color: #d43c33;
+    font-size: 28rpx;
+    text-align: center;
+    line-height: 60rpx;
+}
+
+
+/* 导航区 */
+
+.navContainer .videoNav {
+    display: flex;
+    height: 60rpx;
+}
+
+.videoNav .navItem {
+    height: 40rpx;
+    margin: 0 20rpx;
+    font-size: 28rpx;
+    text-align: center;
+    line-height: 40rpx;
+    white-space: nowrap;
+}
+
+.videoNav .active {
+    padding-bottom: 8rpx;
+    border-bottom: 2rpx solid #d43c33;
+}
+
+
+/* 视频列表区域 */
+
+
+/* content */
+
+.videoItem {
+    padding: 0 20rpx;
+}
+
+.videoItem .content {
+    height: 435rpx;
+}
+
+.content image {
+    width: 100%;
+    height: 350rpx;
+    border-radius: 10rpx;
+}
+
+.content .copyWriting {
+    height: 80rpx;
+    font-size: 28rpx;
+    line-height: 80rpx;
+}
+
+
+/* footer */
+
+.footer {
+    border-top: 2rpx solid #eee;
+    padding: 20rpx 0;
+}
+
+.footer .avatar {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.footer .nickname {
+    font-size: 26rpx;
+    vertical-align: middle;
+    margin-left: 20rpx;
+}
+
+.footer .comments_praised {
+    display: flex;
+    justify-content: space-between;
+    width: 200rpx;
+    float: right;
+}
+
+.comments_praised .btn {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.comments_praised .btn:after {
+    border: none;
+}
+
+.comments_praised .item {
+    position: relative;
+    width: 40rpx;
+}
+
+.comments_praised .item image {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.comments_praised .item .count {
+    position: absolute;
+    top: -20rpx;
+    font-size: 20rpx;
+}

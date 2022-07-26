@@ -1,0 +1,23 @@
+{
+  "name": "miniprogram",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiangtailang/miniProgram.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiangtailang/miniProgram/issues"
+  },
+  "homepage": "https://github.com/jiangtailang/miniProgram#readme",
+  "dependencies": {
+    "pubsub-js": "^1.9.4"
+  }
+}

@@ -1,0 +1,30 @@
+<view class="songDetailContainer">
+    <!-- 上面播放动画 -->
+    <view class="songContent">
+        <text class="author">刘德华</text>
+        <view class="circle"></view>
+        <image src="/static/images/song/needle.png" class="needle {{isPlay && 'needleActive'}}" />
+        <view class="disc {{isPlay && 'discActive'}}">
+            <image src="/static/images/song/disc.png" />
+            <image src="/static/img/huawei.web.jpg" class="musicImg" />
+        </view>
+        <!-- 进度条控制区域 -->
+        <view class="progressControl">
+            <text>00:00</text>
+            <view class="barControl">
+                <view class="audio-currentTime-Bar">
+                    <view class="audioCircle"></view>
+                </view>
+            </view>
+            <text>03:56</text>
+        </view>
+    </view>
+    <!-- 底部控制播放区域 -->
+    <view class="musicControl">
+        <image src="/static/svg/shuffle.svg" />
+        <image src="/static/svg/shangyishou.svg" />
+        <image src="{{isPlay?'/static/svg/zanting.svg':'/static/svg/bofang.svg'}}" class="big" bindtap="handlerMusicPlay" />
+        <image src="/static/svg/xiayishou.svg" />
+        <image src="/static/svg/playList.svg" />
+    </view>
+</view>

@@ -1,0 +1,127 @@
+<view class="recommendSongContainer">
+    <view class="header">
+        <image src="/static/images/recommendSong/recommendSong.jpg"></image>
+        <view class="day">
+            <text class="date">{{date}} / </text>
+            <text class="month">{{month}}</text>
+        </view>
+    </view>
+    <view class="songListContainer">
+        <view class="title">
+            <text>播放全部</text>
+            <text class="changeMore">多选</text>
+        </view>
+        <scroll-view class="musicList">
+            <view class="musicItem">
+                <image src="/static/img/huawei.web.jpg" class="pic" />
+                <view class="musicInfo">
+                    <text class="musicName">光辉岁月</text>
+                    <text class="author">beyond</text>
+                </view>
+                <view class="moreBox">
+                    <image src="/static/svg/more.svg" class="more" />
+                </view>
+            </view>
+            <view class="musicItem">
+                <image src="/static/img/huawei.web.jpg" class="pic" />
+                <view class="musicInfo">
+                    <text class="musicName">光辉岁月光辉岁月光辉岁月光辉岁月光辉岁月光辉岁月光辉岁月光辉岁月光辉岁月光辉岁月</text>
+                    <text class="author">beyond</text>
+                </view>
+                <view class="moreBox">
+                    <image src="/static/svg/more.svg" class="more" />
+                </view>
+            </view>
+            <view class="musicItem">
+                <image src="/static/img/huawei.web.jpg" class="pic" />
+                <view class="musicInfo">
+                    <text class="musicName">光辉岁月</text>
+                    <text class="author">beyond</text>
+                </view>
+                <view class="moreBox">
+                    <image src="/static/svg/more.svg" class="more" />
+                </view>
+            </view>
+            <view class="musicItem">
+                <image src="/static/img/huawei.web.jpg" class="pic" />
+                <view class="musicInfo">
+                    <text class="musicName">光辉岁月</text>
+                    <text class="author">beyond</text>
+                </view>
+                <view class="moreBox">
+                    <image src="/static/svg/more.svg" class="more" />
+                </view>
+            </view>
+            <view class="musicItem">
+                <image src="/static/img/huawei.web.jpg" class="pic" />
+                <view class="musicInfo">
+                    <text class="musicName">光辉岁月</text>
+                    <text class="author">beyond</text>
+                </view>
+                <view class="moreBox">
+                    <image src="/static/svg/more.svg" class="more" />
+                </view>
+            </view>
+            <view class="musicItem">
+                <image src="/static/img/huawei.web.jpg" class="pic" />
+                <view class="musicInfo">
+                    <text class="musicName">光辉岁月</text>
+                    <text class="author">beyond</text>
+                </view>
+                <view class="moreBox">
+                    <image src="/static/svg/more.svg" class="more" />
+                </view>
+            </view>
+            <view class="musicItem">
+                <image src="/static/img/huawei.web.jpg" class="pic" />
+                <view class="musicInfo">
+                    <text class="musicName">光辉岁月</text>
+                    <text class="author">beyond</text>
+                </view>
+                <view class="moreBox">
+                    <image src="/static/svg/more.svg" class="more" />
+                </view>
+            </view>
+            <view class="musicItem">
+                <image src="/static/img/huawei.web.jpg" class="pic" />
+                <view class="musicInfo">
+                    <text class="musicName">光辉岁月</text>
+                    <text class="author">beyond</text>
+                </view>
+                <view class="moreBox">
+                    <image src="/static/svg/more.svg" class="more" />
+                </view>
+            </view>
+            <view class="musicItem">
+                <image src="/static/img/huawei.web.jpg" class="pic" />
+                <view class="musicInfo">
+                    <text class="musicName">光辉岁月</text>
+                    <text class="author">beyond</text>
+                </view>
+                <view class="moreBox">
+                    <image src="/static/svg/more.svg" class="more" />
+                </view>
+            </view>
+            <view class="musicItem">
+                <image src="/static/img/huawei.web.jpg" class="pic" />
+                <view class="musicInfo">
+                    <text class="musicName">光辉岁月</text>
+                    <text class="author">beyond</text>
+                </view>
+                <view class="moreBox">
+                    <image src="/static/svg/more.svg" class="more" />
+                </view>
+            </view>
+            <view class="musicItem">
+                <image src="/static/img/huawei.web.jpg" class="pic" />
+                <view class="musicInfo">
+                    <text class="musicName">光辉岁月</text>
+                    <text class="author">beyond</text>
+                </view>
+                <view class="moreBox">
+                    <image src="/static/svg/more.svg" class="more" />
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

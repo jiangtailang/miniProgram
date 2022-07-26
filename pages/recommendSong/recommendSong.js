@@ -1,35 +1,26 @@
-// pages/video/video.js
-import request from '../../utils/request'
+import PubSub from 'pubsub-js'
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        videoGroupList: [],
-        navId: ''
+        date: '',
+        month: ''
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-        this.getvideoGroupList()
+        this.getDate()
     },
-    // 获取视频标签列表
-    async getvideoGroupList() {
-        let result = await request('/video/group/list')
+    getDate() {
+        let date = new Date().getDate()
+        let month = new Date().getMonth() + 1;
         this.setData({
-            videoGroupList: result.data.slice(0, 14),
-            navId: result.data[0].id
-        })
-    },
-    // 点击切换导航标签
-    tapNavItem(event) {
-        let navId = event.currentTarget.id //通过id向event传参的时候如果传的是number会自动转换成string
-            // let navId = event.currentTarget.dataset.id  //通过data-key=value不会自动转换
-        this.setData({
-            navId: navId >>> 0 //将string强制转换成number
+            date,
+            month
         })
     },
     /**

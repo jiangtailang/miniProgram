@@ -1,9 +1,12 @@
 {
   "pages": [
-    "pages/personal/personal",
-    "pages/login/login",
+    "pages/search/search",
     "pages/index/index",
-    "pages/video/video"
+    "pages/songDetail/songDetail",
+    "pages/video/video",
+    "pages/recommendSong/recommendSong",
+    "pages/personal/personal",
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",

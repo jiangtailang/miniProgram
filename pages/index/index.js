@@ -56,7 +56,10 @@ Page({
         }
 
     },
-
+    // 点击每日推荐的导航，跳转至每日推荐页
+    toRecommendSong() {
+        wx.navigateTo({ url: '/pages/recommendSong/recommendSong' })
+    },
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
