@@ -1,12 +1,12 @@
 <view class="videoContainer">
     <view class="videoHeader">
         <image src="/static/images/video/video.jpg"></image>
-        <view class="search">搜索商品</view>
+        <view class="search" bindtap="toSearch">搜索音乐</view>
         <image src="/static/images/logo.png"></image>
     </view>
     <view class="navContainer">
-        <scroll-view class="videoNav" enable-flex scroll-x>
-            <view class="navItem {{navId==item.id?'active':''}}" wx:for="{{videoGroupList}}" wx:key="id" id="{{item.id}}" data-id="{{item.id}}" bindtap="tapNavItem">
+        <scroll-view class="videoNav" enable-flex scroll-x scroll-into-view="{{'scroll' + navId}}" scroll-with-animation>
+            <view class="navItem {{navId==item.id?'active':''}}" wx:for="{{videoGroupList}}" wx:key="id" id="{{'scroll' + item.id}}" data-id="{{item.id}}" bindtap="tapNavItem">
                 <text>{{item.name}}</text>
             </view>
         </scroll-view>

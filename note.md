@@ -155,7 +155,7 @@ console.log(num >>> 1); // 1                // 0000 0001
             1. 在点击切换导航标签时，打开loading效果，wx.showLoading({ title:'加载中' })
             2. 在获取到视频列表数据后，关闭loading效果，wx.hideLoading()
       3. 导航过渡效果
-         在scroll-view标签中添加 scroll-into-view="'scroll' + {{navId}}" ，并给子元素添加 id="'scroll' + {{item.id}}"
+         在scroll-view标签中添加 scroll-into-view="{{'scroll' + navId}}" ，并给子元素添加 id="{{'scroll' + item.id}}"
       4. 阻止多个视频同时播放
          1. 需求
             1. 在点击播放的事件中需要找到上一个播放的视频

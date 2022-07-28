@@ -1,2 +1,44 @@
-<!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class="searchContainer">
+    <!-- 搜索头部区域 -->
+    <view class="searchHeader">
+        <view class="searchInput">
+            <text class="iconfont icon-search1" />
+            <input placeholder="{{placeholderContent}}" placeholder-class="inputPlaceholder" value="{{searchKeyWord}}" bindinput="handleInputChange" />
+            <text class="clear" hidden="{{!searchKeyWord}}" bindtap="clearKeyword">X</text>
+        </view>
+        <view class="cancel" bindtap="toVideo">取消</view>
+    </view>
+    <!-- 搜索相关内容，模糊搜索 -->
+    <block wx:if="{{searchList.length}}">
+        <view class="searchContent">
+            <view class="title">搜索内容"{{searchKeyWord}}"</view>
+            <view class="contentList">
+                <view class="contentItem" wx:for="{{searchList}}" wx:key="id">
+                    <text class="iconfont icon-search1" />
+                    <text class="name">{{item.name}}</text>
+                </view>
+            </view>
+        </view>
+    </block>
+    <block wx:else>
+        <!-- 历史搜索 -->
+        <view class="historyContainer" wx:if="{{historySearchList.length}}">
+            <view class="historyList">
+                <text class="title">历史</text>
+                <text class="historyItem" wx:for="{{historySearchList}}" wx:key="item">{{item}}</text>
+            </view>
+            <text class="iconfont icon-shanchu" bindtap="clearAllHistory"></text>
+        </view>
+        <!-- 热搜榜 -->
+        <view class="hotSearchContainer">
+            <view class="title">热搜榜</view>
+            <view class="hotSearchList">
+                <view class="hotSearchItem" wx:for="{{hotSearchList}}" wx:key="searchWord">
+                    <text class="count">{{index+1}}</text>
+                    <text class="content">{{item.searchWord}}</text>
+                    <image wx:if="{{item.iconUrl}}" src="{{item.iconUrl}}" class="iconUrl" />
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

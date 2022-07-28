@@ -26,11 +26,14 @@ Page({
     },
     // 点击切换导航标签
     tapNavItem(event) {
-        let navId = event.currentTarget.id //通过id向event传参的时候如果传的是number会自动转换成string
-            // let navId = event.currentTarget.dataset.id  //通过data-key=value不会自动转换
+        // let navId = event.currentTarget.id //通过id向event传参的时候如果传的是number会自动转换成string
+        let navId = event.currentTarget.dataset.id //通过data-key=value不会自动转换
         this.setData({
             navId: navId >>> 0 //将string强制转换成number
         })
+    },
+    toSearch() {
+        wx.navigateTo({ url: '/pages/search/search' })
     },
     /**
      * 生命周期函数--监听页面初次渲染完成

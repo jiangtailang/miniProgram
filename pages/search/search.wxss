@@ -1,1 +1,166 @@
-/* pages/search/search.wxss */
+.searchContainer {
+    padding: 20rpx;
+}
+
+
+/* 搜索页头部区域 */
+
+.searchHeader {
+    display: flex;
+    width: 100%;
+    height: 60rpx;
+    padding: 0 10rpx;
+}
+
+.searchHeader .searchInput {
+    position: relative;
+    flex: 1;
+    height: 60rpx;
+    line-height: 60rpx;
+    background-color: rgba(237, 237, 237, .4);
+    border-radius: 30rpx;
+}
+
+.searchInput .icon-search1 {
+    position: absolute;
+    color: #333;
+}
+
+.searchInput .clear {
+    position: absolute;
+    right: 0;
+    bottom: 5rpx;
+    z-index: 9;
+    width: 60rpx;
+    height: 60rpx;
+    font-size: 30rpx;
+    text-align: center;
+    color: #333;
+}
+
+.searchInput input {
+    margin-left: 50rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+
+.searchInput .inputPlaceholder {
+    font-size: 26rpx;
+}
+
+.searchHeader .cancel {
+    width: 100rpx;
+    height: 60rpx;
+    color: #333;
+    line-height: 60rpx;
+    text-align: center;
+}
+
+
+/* 历史搜索 */
+
+.historyContainer {
+    position: relative;
+    margin-top: 20rpx;
+}
+
+.historyList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.historyList .title {
+    height: 50rpx;
+    margin-right: 20rpx;
+    font-size: 28rpx;
+    color: #333;
+    line-height: 50rpx;
+}
+
+.historyList .historyItem {
+    height: 50rpx;
+    margin-right: 20rpx;
+    margin-bottom: 20rpx;
+    padding: 0 30rpx;
+    background-color: #eee;
+    border-radius: 20rpx;
+    font-size: 24rpx;
+    color: #333;
+    line-height: 50rpx;
+}
+
+.historyContainer .icon-shanchu {
+    position: absolute;
+    right: 20rpx;
+    bottom: 5rpx;
+    font-size: 40rpx;
+}
+
+
+/* 热搜榜 */
+
+.hotSearchContainer {
+    margin-top: 10rpx;
+    color: #333;
+}
+
+.hotSearchContainer .title {
+    width: 100%;
+    height: 80rpx;
+    border-bottom: 1px solid #eee;
+    font-size: 28rpx;
+    line-height: 80rpx;
+}
+
+.hotSearchList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10rpx;
+}
+
+.hotSearchList .hotSearchItem {
+    width: 50%;
+    height: 80rpx;
+    font-size: 26rpx;
+    line-height: 80rpx;
+}
+
+.hotSearchItem .count {
+    margin-right: 10rpx;
+}
+
+.hotSearchItem .iconUrl {
+    width: 35rpx;
+    height: 20rpx;
+    margin-left: 10rpx;
+}
+
+
+/* 搜索相关内容，模糊搜索 */
+
+.searchContent .title {
+    height: 100rpx;
+    border-bottom: 1px solid #bbb;
+    font-size: 26rpx;
+    color: #d43c33;
+    line-height: 100rpx;
+}
+
+.contentList .contentItem {
+    display: flex;
+    height: 80rpx;
+    color: #333;
+    font-size: 28rpx;
+    line-height: 80rpx;
+}
+
+.contentItem .icon-search1 {
+    width: 50rpx;
+}
+
+.contentItem .name {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

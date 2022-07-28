@@ -12,7 +12,7 @@
             <text class="changeMore">多选</text>
         </view>
         <scroll-view class="musicList">
-            <view class="musicItem">
+            <view class="musicItem" bindtap="toSongDetail">
                 <image src="/static/img/huawei.web.jpg" class="pic" />
                 <view class="musicInfo">
                     <text class="musicName">光辉岁月</text>
