@@ -1,0 +1,5 @@
+@import "/template/myTemplate/myTemplate.wxss";
+.default {
+    font-size: 40rpx;
+    color: pink;
+}

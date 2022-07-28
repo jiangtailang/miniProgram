@@ -32,11 +32,11 @@
             </view>
             <text>电台</text>
         </view>
-        <view class="iconNavItem">
+        <view class="iconNavItem" bindtap="toOther">
             <view>
                 <image src="/static/svg/zhibo.svg" class="iconfont"></image>
             </view>
-            <text>直播</text>
+            <text>other</text>
         </view>
     </view>
     <!-- 为你推荐 -->

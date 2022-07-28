@@ -1,3 +1,10 @@
+/* 引入iconfont样式，之前的icon是直接引入到app.wxss中，因为这里使用独立分包，所以需要再引入 */
+
+@import "/static/iconfont/iconfont.wxss";
+page {
+    height: 100%;
+}
+
 .songDetailContainer {
     position: relative;
     height: 100%;

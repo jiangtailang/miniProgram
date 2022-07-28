@@ -124,4 +124,5 @@
             </view>
         </scroll-view>
     </view>
+    <text class="iconfont icon-shanchu"></text>
 </view>

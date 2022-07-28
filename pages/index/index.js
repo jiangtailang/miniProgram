@@ -15,7 +15,11 @@ Page({
     /**
      * 生命周期函数--监听页面加载
      */
-    async onLoad(options) {
+    onLoad(options) {
+        this.getInitData()
+    },
+    // 获取初始化数据，包括轮播图、推荐歌单、排行榜数据
+    async getInitData() {
         // 获取轮播图数据
         let bannerListResult = await request('/banner', { type: 2 })
         if (bannerListResult.code == 200) {
@@ -54,11 +58,14 @@ Page({
                 // 不需要等待五次请求全部结束才更新，用户体验较好，但是渲染次数会多一些
             this.setData({ topList: finalArr })
         }
-
     },
     // 点击每日推荐的导航，跳转至每日推荐页
     toRecommendSong() {
-        wx.navigateTo({ url: '/pages/recommendSong/recommendSong' })
+        wx.navigateTo({ url: '/songPackage/pages/recommendSong/recommendSong' })
+    },
+    // 点击other的导航
+    toOther() {
+        wx.navigateTo({ url: '/otherPackage/pages/other/other' })
     },
     /**
      * 生命周期函数--监听页面初次渲染完成

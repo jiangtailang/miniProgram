@@ -25,7 +25,7 @@ Page({
     },
     // 跳转至音乐详情页
     toSongDetail() {
-        wx.navigateTo({ url: '/pages/songDetail/songDetail' })
+        wx.navigateTo({ url: '/songPackage/pages/songDetail/songDetail' })
     },
     /**
      * 生命周期函数--监听页面初次渲染完成
